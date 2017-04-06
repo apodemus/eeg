@@ -15,5 +15,5 @@ def load_data(filename):
     duration = length / sampling_frq
     Nch = len(chnls)
     timestamp = int(timestamp[0]) if len(timestamp) else None
-    return data, duration, sampling_frq, Nch, timestamp
+    return data.T, duration, sampling_frq, Nch, timestamp
 
